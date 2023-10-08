@@ -1,0 +1,4 @@
+User-Agent: *
+
+Sitemap: https://forcecredit.ru/sitemap.xml
+Host: https://forcecredit.ru

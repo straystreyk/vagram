@@ -9,16 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "13.5.4",
+    "nodemailer": "^6.9.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "rodal": "^2.1.0",
+    "sonner": "^1.0.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.11",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "prettier": "^3.0.3",
+    "typescript": "^5"
   }
 }

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700');
+
+:root {
+    --yellow: #f6c709;
+    --yellow-hover: #fcd224;
+}
+
+/* Reset and base styles  */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #1c1d1f;
+}
+
+/* Links */
+
+
+input {
+    border: 2px solid #1c1d1f;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.2s all ease;
+}
+
+input:focus {
+    border: 2px solid var(--yellow);
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #1c1d1f;
+    transition: 0.2s all ease;
+
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 24px 48px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    background: #fff;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__contact-number {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo svg {
+    color: var(--yellow);
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.main__block-1-section {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+.main__block-1-section::before {
+    background-image: url("/assets/images/main-bg.webp");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.main__block-1-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.main__block-1-content {
+    width: 700px;
+    flex-shrink: 0;
+}
+
+.main__block-1-content h1 {
+    margin-bottom: 40px;
+}
+
+.main__block-1-content-text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main__block-1-content-text > p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main__block-1-form {
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.main__block-1-form > button {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.main__block-1-form > p {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.main__block-1-form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 12px 24px;
+    background-color: var(--yellow);
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+
+.button:hover {
+    background-color: var(--yellow-hover);
+}
+
+.main__services-section {
+    margin: 120px 0;
+}
+
+.main__services-title {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.main__services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.main__services-card-item {
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__services-card-item-title {
+    font-size: 28px;
+    height: 100px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid var(--yellow-hover);
+}
+
+.main__services-card-item-description {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.main__services-card-item-extra {
+    margin-bottom: 24px;
+    color: var(--yellow-hover);
+    font-size: 12px;
+}
+
+.main__services-card-item .button {
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.main__services-title img {
+    width: 250px;
+}
+
+.rodal-dialog {
+    background-color: transparent!important;
+    box-shadow: none !important;
+}
+
+.rodal-close {
+    top: 32px !important;
+    right: 32px !important;
+}
+
+.footer {
+
+}
