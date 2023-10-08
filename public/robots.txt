@@ -1,4 +1,4 @@
 User-Agent: *
 
-Sitemap: https://forcecredit.ru/sitemap.xml
-Host: https://forcecredit.ru
+Sitemap: https://creditgenius.ru/sitemap.xml
+Host: https://creditgenius.ru

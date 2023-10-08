@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="075e38ca-508f-413b-8d8f-7aa483ef7bb2" name="kek">
+        <fileTransfer accessType="SFTP" host="185.41.161.80" port="22" sshConfigId="45fa3817-122f-406e-8d23-7aba12ef07a8" sshConfig="root@185.41.161.80:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
