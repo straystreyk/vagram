@@ -1,7 +1,7 @@
 'use client'
 
 import {Container} from "@/components/container";
-import {useState} from "react";
+import {FormEvent, useState} from "react";
 import Tick from "@/../public/assets/icons/tick.svg"
 import {toast} from "sonner";
 
@@ -10,7 +10,7 @@ export const Form = () => {
     const [loading, setLoading] = useState(false)
 
     const onSubmit =
-        (e) => {
+        (e:FormEvent) => {
             setLoading(true)
             e.preventDefault()
             try {

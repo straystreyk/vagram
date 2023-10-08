@@ -1,4 +1,5 @@
 import Bulb from "@/../../public/assets/icons/bulb.svg"
+import Link from "next/link";
 
 
 const links = [
@@ -28,10 +29,10 @@ const links = [
 export const Header = () => {
     return (
         <header className="header">
-            <div className="logo">
+            <Link href="/" className="logo">
             <Bulb />
             Кредитный Гений
-            </div>
+            </Link>
             <div className="header__content">
                 <ul className="header__nav">
                     {links.map(item => {
