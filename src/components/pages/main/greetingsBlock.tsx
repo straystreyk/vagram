@@ -26,7 +26,9 @@ export const Form = () => {
                 toast.success('Заявка успешно отправлена')
                 setFormState({name: "", phone: ""})
             } catch (e) {
-                console.log(e.message)
+                if (e instanceof Error) {
+                    console.log(e.message)
+                }
                 toast.error('Что-то пошло не так')
             } finally {
                 setLoading(false)
