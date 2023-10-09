@@ -2,7 +2,8 @@ import nodemailer from "nodemailer"
 import {NextResponse} from "next/server";
 
 
-const pass = "0iWphUFykeqSRAjakHTW"
+const pass = "UbVWkAzZrTpeLHrKeVP0"
+const user = "creditgenius@mail.ru"
 
 
 export async function POST(req: Request) {
@@ -14,18 +15,18 @@ export async function POST(req: Request) {
             port: 465,
             secure: true,
             auth: {
-                user: 'tigran93931@mail.ru',
+                user,
                 pass
             }
         })
 
         const mailOptions = {
-            from: 'tigran93931@mail.ru',
-            to: "tigran93931@mail.ru",
+            from: user,
+            to: user,
             subject: 'Заявка с сайта Кредитный Гений',
             text: `
               Оставили заявку:
-              Имя: ${body?.name || ""} 
+              ${body?.name ? `Имя: ${body.name}` : ""} 
               Номер телефона: ${body.phone}
         `
         }
