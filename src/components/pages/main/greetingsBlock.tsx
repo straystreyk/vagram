@@ -2,9 +2,9 @@
 
 import {Container} from "@/components/container";
 import {ChangeEvent, FormEvent, useState} from "react";
-import Tick from "../../../public/assets/icons/tick.svg"
+import Tick from "../../../../public/assets/icons/tick.svg"
 import {toast} from "sonner";
-import {formatToRusNumber} from "@/helpers/common";
+import {formatToRusNumber} from "@/components/helpers/common";
 
 export const useForm = () => {
     const [formState, setFormState] = useState({name: "", phone: ""})

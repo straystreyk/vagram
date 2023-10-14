@@ -1,6 +1,6 @@
 import {Metadata} from "next";
-import {GreetingsBlock} from "@/pages/main/greetingsBlock";
-import {ServicesBlock} from "@/pages/main/servicesBlock";
+import {GreetingsBlock} from "@/components/pages/main/greetingsBlock";
+import {ServicesBlock} from "@/components/pages/main/servicesBlock";
 import {Container} from "@/components/container";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 "use client"
 
 import {Container} from "@/components/container";
-import NoMoney from "../../../public/assets/icons/no-noney.svg";
+import NoMoney from "../../../../public/assets/icons/no-noney.svg";
 
 const list = [
     {

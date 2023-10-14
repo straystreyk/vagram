@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const links = [
     {
-    id: "services",
-    name: "Услуги"
+        id: "services",
+        name: "Услуги"
     },
     {
         id: "getCredit",
@@ -17,12 +17,8 @@ const links = [
     },
     {
         id: "reviews",
-        name: "Отзывы"
-    },
-    // {
-    //     id: "contacts",
-    //     name: "Контакты"
-    // },
+        name: "Отзывы",
+    }
 
 ]
 
@@ -30,8 +26,8 @@ export const Header = () => {
     return (
         <header className="header">
             <Link href="/" className="logo">
-            <Bulb />
-            Кредитный Гений
+                <Bulb/>
+                Кредитный Гений
             </Link>
             <div className="header__content">
                 <ul className="header__nav">

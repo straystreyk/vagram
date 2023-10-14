@@ -1,8 +1,8 @@
 "use client"
 
 import {Container} from "@/components/container";
-import Tick from "../../../public/assets/icons/tick.svg";
-import {useForm} from "@/pages/main/greetingsBlock";
+import Tick from "../../../../public/assets/icons/tick.svg";
+import {useForm} from "@/components/pages/main/greetingsBlock";
 import {FC} from "react";
 
 const LineForm:FC<{btnText?:string}> = ({btnText = "Снизить нагрузку"}) => {
