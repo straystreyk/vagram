@@ -19,10 +19,10 @@ const links = [
         id: "reviews",
         name: "Отзывы"
     },
-    {
-        id: "contacts",
-        name: "Контакты"
-    },
+    // {
+    //     id: "contacts",
+    //     name: "Контакты"
+    // },
 
 ]
 
@@ -41,7 +41,7 @@ export const Header = () => {
                         </li>
                     })}
                 </ul>
-                <a className="header__contact-number" href={`tel:+79882812276`}>+7 (988) 281-22-76</a>
+                <a className="header__contact-number" href={`tel:+79182895555`}>+7 (918) 289-55-55</a>
             </div>
         </header>
     )

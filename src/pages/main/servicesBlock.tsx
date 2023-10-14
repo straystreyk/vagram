@@ -1,11 +1,11 @@
 "use client"
 import Rodal from 'rodal';
 import {Container} from "@/components/container";
-import MoneyImg from "@/../public/assets/images/money.webp"
+import MoneyImg from "../../../public/assets/images/money.webp"
 import Image from "next/image";
 
 import 'rodal/lib/rodal.css';
-import {Form} from "@/components/pages/main/greetingsBlock";
+import {Form} from "@/pages/main/greetingsBlock";
 import {useState} from "react";
 
 const cards = [

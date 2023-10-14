@@ -1,6 +1,8 @@
 import {Metadata} from "next";
-import {GreetingsBlock} from "@/components/pages/main/greetingsBlock";
-import {ServicesBlock} from "@/components/pages/main/servicesBlock";
+import {GreetingsBlock} from "@/pages/main/greetingsBlock";
+import {ServicesBlock} from "@/pages/main/servicesBlock";
+import {HelpSection} from "@/pages/main/helpSection";
+import {WhyWeSection} from "@/pages/main/whyWeSection";
 
 export const metadata: Metadata = {
     title: 'Кредитный Гений',
@@ -16,7 +18,9 @@ const Home = () => {
     return (
         <main className="main">
             <GreetingsBlock/>
-            <ServicesBlock />
+            <ServicesBlock/>
+            <HelpSection/>
+            <WhyWeSection/>
         </main>
     )
 }

@@ -24,11 +24,11 @@ export async function POST(req: Request) {
             from: user,
             to: user,
             subject: 'Заявка с сайта Кредитный Гений',
-            text: `
-              Оставили заявку:
-              ${body?.name ? `Имя: ${body.name}` : ""} 
-              Номер телефона: ${body.phone}
-        `
+            html: `
+              <h1>Оставили заявку:</h1>
+              <div>${body?.name ? `Имя: ${body.name}` : ""}</div>
+              Номер телефона: <a href="tel:${body.phone}">${body.phone}</a>
+             `
         }
 
         await transporter.sendMail(mailOptions)
