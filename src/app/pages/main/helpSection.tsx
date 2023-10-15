@@ -18,7 +18,7 @@ export const LineForm:FC<{btnText?:string}> = ({btnText = "Снизить наг
 
 export const HelpSection = () => {
     return (
-        <section className="main__help-section">
+        <section id="help-section" className="main__help-section">
             <Container>
                 <div className="main__help-content">
                     <h1>Поможем снизить финансовую&nbsp;нагрузку</h1>

@@ -132,13 +132,21 @@ legend {
     margin: 0 auto;
 }
 
+.burger {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
 .header {
     position: sticky;
     top: 0;
     padding: 24px 48px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
     display: flex;
-    z-index: 10;
+    z-index: 9;
     align-items: center;
     background: #fff;
     justify-content: space-between;
@@ -148,6 +156,19 @@ legend {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.header__nav-item {
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.header__nav-item:hover {
+    color: var(--yellow-hover);
+}
+
+.header__nav-item-active-true {
+    color: var(--yellow);
 }
 
 .header__content {
@@ -484,4 +505,225 @@ legend {
     align-items: center;
     flex-direction: column;
     gap: 16px;
+}
+
+
+@media (max-width: 1320px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .main__block-1-content {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 93vw;
+    }
+
+    .main__block-1-content {
+        width: auto;
+    }
+
+    .main__block-1-section {
+        padding: 80px 0;
+    }
+
+    .main__services-section {
+        margin-top: 80px;
+    }
+
+    .main__help-section {
+        margin-top: 80px;
+    }
+
+    .main__why-we-section {
+        margin-top: 80px;
+    }
+
+    .main__last-section {
+        margin-top: 80px;
+    }
+
+    .main__block-1-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main__services-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main__services-title {
+        position: relative;
+    }
+
+    .main__services-title img {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+    }
+
+    .main__why-we-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .line-form {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .line-form button {
+        width: 100%;
+    }
+
+    .line-form input {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 80px;
+        padding: 40px 0;
+    }
+
+    .main__block-1-section::before {
+        background-position: right;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .header {
+        padding: 24px 2vw;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__contact-number {
+        display: none;
+    }
+
+    .burger-menu {
+        position: fixed;
+        width: 50%;
+        background: #fff;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 24px;
+    }
+
+    .burger-menu-header {
+        color: #000;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .burger-menu-ul {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header__nav-item {
+        font-size: 32px;
+    }
+
+    .burger-menu-number {
+        display: inline-block;
+        margin-top: 32px;
+        font-size: 32px;
+    }
+
+    .burger-menu {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s all ease;
+    }
+
+    .burger-menu.burger-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .overlay {
+        background: #000;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        transition: 0.2s all ease;
+        pointer-events: none;
+    }
+
+    .overlay.burger-active {
+        opacity: 0.4;
+        pointer-events: all;
+    }
+
+    .main__last-section-title p {
+        color: #1c1d1f;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 32px;
+    }
+    .container {
+        max-width: 93vw;
+    }
+
+    .main__services-cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 24px;
+    }
+
+    .main__why-we-cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 24px;
+    }
+
+    .main__services-section {
+        overflow: hidden;
+    }
+
+    .main__last-section {
+        overflow: hidden;
+    }
+
+    .burger-menu {
+        width: 84vw;
+    }
+
+
+    .header__nav-item {
+        font-size: 24px;
+    }
+
+    .burger-menu-number {
+        font-size: 24px;
+    }
+
 }

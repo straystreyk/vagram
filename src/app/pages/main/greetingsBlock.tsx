@@ -83,7 +83,7 @@ export const Form = () => {
 
 export const GreetingsBlock = () => {
     return (
-        <section className="main__block-1-section">
+        <section id="greetings-section" className="main__block-1-section">
             <Container>
                 <div className="main__block-1-wrapper">
                     <div className="main__block-1-content">

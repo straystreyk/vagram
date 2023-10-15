@@ -48,7 +48,7 @@ export const ServicesBlock = () => {
     const [visible, setVisible] = useState(false)
 
     return (
-        <section className="main__services-section">
+        <section id="services-section" className="main__services-section">
             <Container>
                 <div className="main__services-title">
                     <h1>С нами получают деньги<br/>на разные нужды</h1>

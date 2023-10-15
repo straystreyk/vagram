@@ -43,10 +43,10 @@ const list = [
 
 export const WhyWeSection = () => {
     return (
-        <section className="main__why-we-section">
+        <section id="why-we-section" className="main__why-we-section">
             <Container>
                 <div className="main__why-we-content">
-                    <h1>Почему стоит обратиться к нам</h1>
+                    <h1>Почему стоит обратиться к&nbsp;нам</h1>
 
                     <div className="main__why-we-cards">
                         {list.map((item, index) => {

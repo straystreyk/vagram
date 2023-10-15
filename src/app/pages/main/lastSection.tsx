@@ -7,10 +7,10 @@ import Image from "next/image";
 
 export const LastSection = () => {
     return (
-        <section className="main__last-section">
+        <section id="last-section" className="main__last-section">
             <Container>
                 <div className="main__last-section-title">
-                    <h1>Получите деньги уже через <span>2-3 дня!</span></h1>
+                    <h1>Получите деньги уже через <span>&nbsp;2-3&nbsp;дня!</span></h1>
                     <p>Просто оставьте заявку сейчас и наши специалисты свяжутся с вами в течение дня.</p>
                     <p>Заявка отправляется напрямую брокеру, никакого спама и рассылок.</p>
                 </div>
