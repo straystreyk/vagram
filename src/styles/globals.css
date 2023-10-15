@@ -711,6 +711,7 @@ legend {
 
     .main__services-section {
         overflow: hidden;
+        padding: 10px 0;
     }
 
     .main__last-section {
