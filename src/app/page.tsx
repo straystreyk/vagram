@@ -1,8 +1,9 @@
 import {Metadata} from "next";
-import {GreetingsBlock} from "@/components/pages/main/greetingsBlock";
-import {ServicesBlock} from "@/components/pages/main/servicesBlock";
-import {HelpSection} from "@/components/pages/main/helpSection";
-import {WhyWeSection} from "@/components/pages/main/whyWeSection";
+import {GreetingsBlock} from "@/app/pages/main/greetingsBlock";
+import {ServicesBlock} from "@/app/pages/main/servicesBlock";
+import {HelpSection} from "@/app/pages/main/helpSection";
+import {WhyWeSection} from "@/app/pages/main/whyWeSection";
+import {LastSection} from "@/app/pages/main/lastSection";
 
 export const metadata: Metadata = {
     title: 'Кредитный Гений',
@@ -21,6 +22,7 @@ const Home = () => {
             <ServicesBlock/>
             <HelpSection/>
             <WhyWeSection/>
+            <LastSection/>
         </main>
     )
 }

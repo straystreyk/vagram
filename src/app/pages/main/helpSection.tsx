@@ -2,10 +2,10 @@
 
 import {Container} from "@/components/container";
 import Tick from "../../../../public/assets/icons/tick.svg";
-import {useForm} from "@/components/pages/main/greetingsBlock";
+import {useForm} from "@/app/pages/main/greetingsBlock";
 import {FC} from "react";
 
-const LineForm:FC<{btnText?:string}> = ({btnText = "Снизить нагрузку"}) => {
+export const LineForm:FC<{btnText?:string}> = ({btnText = "Снизить нагрузку"}) => {
     const { onChange, formState, onSubmit } = useForm()
     return (
         <form onSubmit={onSubmit} className="line-form">

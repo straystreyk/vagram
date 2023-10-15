@@ -15,10 +15,10 @@ const links = [
         id: "aboutUs",
         name: "О нас"
     },
-    {
-        id: "reviews",
-        name: "Отзывы",
-    }
+    // {
+    //     id: "reviews",
+    //     name: "Отзывы",
+    // }
 
 ]
 

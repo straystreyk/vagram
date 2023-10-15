@@ -28,24 +28,6 @@ body {
 }
 
 /* Links */
-
-
-input {
-    border: 2px solid #1c1d1f;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.2s all ease;
-}
-
-input:focus {
-    border: 2px solid var(--yellow);
-}
-
-input::placeholder {
-    color: #ccc;
-}
-
 a, a:link, a:visited {
     text-decoration: none;
     color: #1c1d1f;
@@ -96,6 +78,23 @@ input, textarea, button, select {
     font-size: inherit;
     color: inherit;
     background-color: transparent;
+}
+
+input {
+    border: 2px solid #1c1d1f;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.2s all ease;
+    background: #fff;
+}
+
+input:focus {
+    border: 2px solid var(--yellow);
+}
+
+input::placeholder {
+    color: #919090;
 }
 
 input::-ms-clear {
@@ -381,6 +380,87 @@ legend {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 64px;
+}
+
+.main__why-we-card-item {
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__why-we-card-item-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--yellow-hover);
+}
+
+.main__why-we-card-item-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.main__why-we-card-item-name {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.main__last-section {
+    margin-top: 120px;
+}
+
+.main__last-section .container {
+    position: relative;
+}
+
+.main__last-section-title {
+    text-align: center;
+}
+
+.main__last-section-title h1 {
+    margin-bottom: 24px;
+}
+
+.main__last-section-title h1 span {
+    color: var(--yellow);
+}
+
+.main__last-section-title p {
+    color: #e3ba11;
+}
+
+.main__last-section-form {
+    display: flex;
+    justify-content: center;
+}
+
+.main__last-section-form .line-form {
+    margin: 40px auto;
+}
+
+.main__last-section-form img {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.main__last-section-form .image-money {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: -1;
+    width: 250px;
+}
+
+.main__last-section-form .image-alarm {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    width: 200px;
 }
 
 .rodal-dialog {
