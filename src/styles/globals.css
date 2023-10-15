@@ -352,6 +352,10 @@ legend {
     gap: 8px;
 }
 
+.main__help-content-info svg {
+    flex-shrink: 0;
+}
+
 .main__help-content-info p {
     display: flex;
     align-items: center;
@@ -689,7 +693,7 @@ legend {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .container {
         max-width: 93vw;
@@ -724,6 +728,16 @@ legend {
 
     .burger-menu-number {
         font-size: 24px;
+    }
+
+    .logo {
+        font-size: 24px;
+        gap: 8px;
+        font-weight: 500;
+    }
+
+    .logo svg {
+        display: none;
     }
 
 }
